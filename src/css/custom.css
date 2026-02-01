@@ -1,0 +1,92 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+
+/* src/css/login.css */
+.auth-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: var(--ifm-background-color);
+}
+
+.auth-card {
+  background: var(--ifm-card-background-color);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.auth-header h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.auth-header p {
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 2rem;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  color: #757575;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.google-btn:hover {
+  background: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.google-btn img {
+  width: 20px;
+}
+
+.auth-footer {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: var(--ifm-color-content-secondary);
+}
